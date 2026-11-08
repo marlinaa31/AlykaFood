@@ -1,42 +1,40 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import bolenCoklatKeju from '../assets/images/bolen.png'
+import risolMayo from '../assets/images/smokebeef.jpg'
+import riceBowl from '../assets/images/ricebowl.jpg'
+import risolCoklat from '../assets/images/risolcoklat.jpg'
+
+ const WA_NUMBER = '6285381992125'
 
 const restaurants = [
   {
-    name: 'Burger House',
-    category: 'Burgers & Fast Food',
+    name: 'Bolen Coklat Keju',
+    category: 'Sweet',
     rating: '4.8',
-    time: '20-30 min',
-    price: '$$',
-    delivery: 'Free delivery over $20',
-    image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=600',
+    price: 'Rp30.000',
+    image: bolenCoklatKeju,
   },
   {
-    name: 'Pizza Palace',
-    category: 'Italian & Pizza',
+    name: 'Risol Mayo Smoke Beef',
+    category: 'Snack',
     rating: '4.9',
-    time: '25-35 min',
-    price: '$$',
-    delivery: 'Free delivery over $25',
-    image: 'https://images.unsplash.com/photo-1579751626657-72bc17010498?w=600',
+    price: 'Rp15.000',
+    image: risolMayo,
   },
   {
-    name: 'Sushi Corner',
-    category: 'Japanese Food',
+    name: 'Rice Bowl Ayam Sambal Matah',
+    category: 'Main Course',
     rating: '4.7',
-    time: '30-40 min',
-    price: '$$$',
-    delivery: 'Free delivery over $15',
-    image: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600',
+    price: 'Rp25.000',
+    image: riceBowl,
   },
   {
-    name: 'Healthy Bowl',
-    category: 'Healthy & Salads',
+    name: 'Risol Coklat',
+    category: 'Snack',
     rating: '4.8',
-    time: '15-25 min',
-    price: '$$',
-    delivery: 'Free delivery over $20',
-    image: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600',
+    price: 'Rp12.000',
+    image: risolCoklat,
   },
 ]
 
@@ -49,8 +47,12 @@ const Arrow = () => (
 const RestaurantCard = ({ restaurant }) => {
   const [liked, setLiked] = useState(false)
 
+  const orderLink = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(
+    `Halo Alyka Food, saya mau pesan ${restaurant.name} (${restaurant.price}).`
+  )}`
+
   return (
-    <article className="group bg-white rounded-2xl overflow-hidden border border-[#F0DFC0] shadow-[0_12px_28px_-16px_rgba(120,80,30,0.4)] hover:-translate-y-1 transition duration-300">
+    <article className="group relative bg-white rounded-2xl overflow-hidden border border-[#F0DFC0] shadow-[0_12px_28px_-16px_rgba(120,80,30,0.4)] hover:-translate-y-1 transition duration-300">
 
       {/* Gambar + tombol favorit */}
       <div className="relative h-44 overflow-hidden">
@@ -66,7 +68,7 @@ const RestaurantCard = ({ restaurant }) => {
           aria-label={liked ? 'Hapus dari favorit' : 'Tambah ke favorit'}
           aria-pressed={liked}
           onClick={() => setLiked((v) => !v)}
-          className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/95 shadow-md flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F4AE3D]"
+          className="absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-white/95 shadow-md flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F4AE3D]"
         >
           <svg
             className={`w-4 h-4 transition ${liked ? 'text-red-500' : 'text-[#2B1B12]'}`}
@@ -94,17 +96,19 @@ const RestaurantCard = ({ restaurant }) => {
           <span className="font-semibold">{restaurant.rating}</span>
         </div>
 
-        <div className="flex items-center gap-1.5 mt-2 text-xs text-[#66564A]">
-          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="8.5" />
-            <path d="M12 7.5V12l3 2" />
-          </svg>
-          {restaurant.time}
-        </div>
+        <div className="flex items-center justify-between mt-2">
+          <span className="text-sm font-semibold text-[#8B6040]">{restaurant.price}</span>
 
-        <div className="flex items-end justify-between mt-2">
-          <p className="text-xs text-[#66564A]">{restaurant.delivery}</p>
-          <span className="text-xs font-semibold text-[#8B6040]">{restaurant.price}</span>
+          {/* after:absolute inset-0 membuat seluruh kartu bisa diklik */}
+          <a
+            href={orderLink}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`Pesan ${restaurant.name} via WhatsApp`}
+            className="inline-flex items-center gap-1 text-xs font-medium text-[#2B1B12] group-hover:text-[#8B6040] group-hover:gap-2 transition-all after:absolute after:inset-0 focus:outline-none focus-visible:after:ring-2 focus-visible:after:ring-[#F4AE3D] after:rounded-2xl"
+          >
+            Pesan <Arrow />
+          </a>
         </div>
       </div>
     </article>
@@ -118,12 +122,12 @@ const PopularRestaurants = () => {
 
         <div className="flex items-end justify-between gap-4 mb-8">
           <div>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#2B1B12] leading-tight">
-              Popular Restaurants
-            </h2>
-            <p className="text-sm text-[#66564A] mt-2">
-              Discover the most loved restaurants around you.
+            <p className="text-[11px] tracking-[0.35em] font-medium text-[#2B1B12] mb-6">
+              BEST SELLERS
             </p>
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#2B1B12] leading-tight">
+              Our Popular Menu
+            </h2>
           </div>
 
           <Link
