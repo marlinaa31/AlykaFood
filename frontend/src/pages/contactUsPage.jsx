@@ -9,7 +9,7 @@ const ContactUsPage = () => {
       <Navbar />
 
       {/* Main Content / Bagian Kontak */}
-      <main className="flex-grow max-w-5xl mx-auto px-6 py-12 md:py-16 w-full">
+      <main className="flex-grow max-w-5xl mx-auto px-6 pt-32 pb-12 md:pb-16 w-full">
         <div className="bg-[#FDEFD0]/60 rounded-3xl p-8 md:p-12 border border-[#FAD99B]/50 relative overflow-hidden shadow-sm">
           <div className="max-w-2xl mx-auto space-y-8 relative z-10 text-center">
             <div>
@@ -28,7 +28,7 @@ const ContactUsPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left pt-4">
               <div className="bg-white/80 p-6 rounded-2xl border border-gray-100 shadow-sm">
                 <h4 className="text-xs font-semibold text-gray-500 uppercase mb-1">Telepon / WhatsApp</h4>
-                <p className="font-semibold text-base text-[#2B1B17]">+62 538 199 2125</p>
+                <p className="font-semibold text-base text-[#2B1B17]">+62 853-8199-2125</p>
               </div>
 
               <div className="bg-white/80 p-6 rounded-2xl border border-gray-100 shadow-sm">
