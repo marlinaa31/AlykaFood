@@ -2,15 +2,15 @@ import React from 'react'
 
 const features = [
   {
-    title: 'Fast Delivery',
-    description: 'Get your favorite meals delivered quickly and safely to your doorstep.',
+    title: 'Pengiriman Cepat',
+    description: 'Pesananmu diantar dengan cepat dan aman sampai depan pintu.',
     icon: (
       <path d="M13 3L5 13.5h6L10 21l8-10.5h-6L13 3z" />
     ),
   },
   {
-    title: 'Fresh Food',
-    description: 'Enjoy delicious meals made with fresh and high-quality ingredients.',
+    title: 'Bahan Pilihan',
+    description: 'Dibuat dari bahan berkualitas untuk rasa yang selalu terjaga.',
     icon: (
       <>
         <path d="M5 19c0-8 5-14 14-14 0 9-6 14-14 14z" />
@@ -19,8 +19,8 @@ const features = [
     ),
   },
   {
-    title: 'Easy Ordering',
-    description: 'Order your favorite food easily with just a few taps.',
+    title: 'Pesan Mudah',
+    description: 'Pesan menu favoritmu lewat WhatsApp, cukup beberapa langkah.',
     icon: (
       <>
         <rect x="7" y="3" width="10" height="18" rx="2.5" />
@@ -29,8 +29,8 @@ const features = [
     ),
   },
   {
-    title: 'Secure Payment',
-    description: 'Safe and convenient payment options for every order.',
+    title: 'Pembayaran Aman',
+    description: 'Pilihan pembayaran yang aman dan praktis untuk setiap pesanan.',
     icon: (
       <>
         <path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3z" />

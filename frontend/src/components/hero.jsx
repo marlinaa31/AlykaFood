@@ -95,7 +95,7 @@ const Hero = () => {
             {/* Tombol menu */}
             <div className="max-w-md">
               <a
-                href="#menu"
+                href="/services"
                 className="inline-flex items-center gap-2 bg-[#F4AE3D] hover:bg-[#E99B25] text-[#2B1B12] font-medium rounded-full pl-6 pr-2 py-2 text-sm shadow-md transition focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2B1B12]"
               >
                 Lihat Semua Menu

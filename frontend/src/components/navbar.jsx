@@ -6,7 +6,7 @@ import ActionButton from "../components/ActionButton";
 const links = [
   { to: '/', label: 'Home' },
   { to: '/services', label: 'Menu' },
-  { to: '/about', label: 'About' },
+  { to: '/about', label: 'About Us' },
   { to: '/contact', label: 'Contact Us' },
 ]
 
@@ -82,7 +82,7 @@ const Navbar = ({ cartCount = 0 }) => {
           {/* Aksi kanan */}
           <div className="flex items-center gap-1">
             
-            <ActionButton to="https://wa.me/62823695443730">
+            <ActionButton to="https://wa.me/6285381992125">
               Reservasi
             </ActionButton>
 
