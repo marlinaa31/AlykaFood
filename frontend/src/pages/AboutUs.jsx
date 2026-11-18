@@ -306,7 +306,7 @@ const AboutUs = () => {
             </p>
 
             <a
-              href="/menu"
+              href="/services"
               className="mt-8 inline-flex items-center gap-3 rounded-full bg-[#F4AE3D] px-8 py-4 font-semibold text-[#38251C] shadow-md transition hover:bg-[#DE982A]"
             >
               Explore Our Menu
