@@ -114,7 +114,7 @@ const MenuPage = () => {
                         </span>
 
                         <a
-                          href="https://api.whatsapp.com/send/?phone=6285381992125&text&type=phone_number&app_absent=0"
+                          href="https://api.whatsapp.com/send/?phone=6285381992152&text&type=phone_number&app_absent=0"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="bg-[#2B1B12] text-white px-4 py-2 rounded-full text-xs hover:bg-[#F4AE3D] transition inline-block"

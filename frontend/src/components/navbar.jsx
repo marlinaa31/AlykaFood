@@ -82,7 +82,7 @@ const Navbar = ({ cartCount = 0 }) => {
           {/* Aksi kanan */}
           <div className="flex items-center gap-1">
             
-            <ActionButton to="https://wa.me/6285381992125">
+            <ActionButton to="https://wa.me/6285381992152">
               Reservasi
             </ActionButton>
 

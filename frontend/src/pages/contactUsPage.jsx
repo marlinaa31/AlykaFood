@@ -28,7 +28,7 @@ const ContactUsPage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left pt-4">
               <div className="bg-white/80 p-6 rounded-2xl border border-gray-100 shadow-sm">
                 <h4 className="text-xs font-semibold text-gray-500 uppercase mb-1">Telepon / WhatsApp</h4>
-                <p className="font-semibold text-base text-[#2B1B17]">+62 853-8199-2125</p>
+                <p className="font-semibold text-base text-[#2B1B17]">+62 853-8199-2152</p>
               </div>
 
               <div className="bg-white/80 p-6 rounded-2xl border border-gray-100 shadow-sm">

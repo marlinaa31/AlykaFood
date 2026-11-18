@@ -1,31 +1,33 @@
 import React, { useRef } from 'react'
 
+
 const reviews = [
   {
-    name: 'Nama Pelanggan 1',
-    city: 'Banda Aceh',
-    text: 'Isi ulasan pelanggan pertama. Ganti dengan ulasan asli dari pelangganmu.',
+    name: 'Liner',
+    city: 'Peukan Bada',
+    text: 'Makanannya enak banget! Rasanya pas, porsinya juga memuaskan. Bakal jadi langganan kalau lagi pengen makanan enak.',
     rating: 5,
   },
   {
-    name: 'Nama Pelanggan 2',
-    city: 'Banda Aceh',
-    text: 'Isi ulasan pelanggan kedua. Ganti dengan ulasan asli dari pelangganmu.',
+    name: 'Miyana',
+    city: 'Punge',
+    text: 'Suka banget sama pilihan menunya. Pesanannya datang dengan baik dan rasanya nggak mengecewakan. Recommended banget!',
     rating: 5,
   },
   {
-    name: 'Nama Pelanggan 3',
-    city: 'Aceh Besar',
-    text: 'Isi ulasan pelanggan ketiga. Ganti dengan ulasan asli dari pelangganmu.',
+    name: 'Aqeela',
+    city: 'Batoh',
+    text: 'Awalnya penasaran, ternyata rasanya enak dan kualitas makanannya bagus. Apalagi tampilannya juga menggugah selera!',
     rating: 5,
   },
   {
-    name: 'Nama Pelanggan 4',
+    name: 'Haris',
     city: 'Banda Aceh',
-    text: 'Isi ulasan pelanggan keempat. Ganti dengan ulasan asli dari pelangganmu.',
+    text: 'Pelayanannya ramah dan makanannya worth it dengan harganya. Cocok buat makan bareng teman maupun keluarga.',
     rating: 5,
   },
 ]
+
 
 const Star = ({ filled }) => (
   <svg
