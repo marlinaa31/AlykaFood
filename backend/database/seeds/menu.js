@@ -7,28 +7,28 @@ exports.seed = async function (knex) {
 
   await knex('menu').insert([
     {
-      id: 3,
+      id: 1,
       nama: 'Bolen Coklat Keju',
       kategori: 'Snack',
       harga: 30000,
       gambar: '1794965115593.png'
     },
     {
-      id: 4,
+      id: 2,
       nama: 'Risol Mayo Smoke Beef',
       kategori: 'Snack',
       harga: 15000,
       gambar: '1794965149378.jpg'
     },
     {
-      id: 5,
+      id: 3,
       nama: 'Rice Bowl Ayam Sambal Matah',
       kategori: 'Main Course',
       harga: 25000,
       gambar: '1794965179969.jpg'
     },
     {
-      id: 6,
+      id: 4,
       nama: 'Risol Coklat',
       kategori: 'Snack',
       harga: 12000,
