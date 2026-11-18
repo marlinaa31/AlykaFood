@@ -5,6 +5,7 @@ const menus = [
     category: 'Main Course',
     price: 120000,
     image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600',
+   
   },
   {
     id: 2,

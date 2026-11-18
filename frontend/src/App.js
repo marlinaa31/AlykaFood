@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/homePage';
 import MenuPage from './pages/menuPage';
 import ContactUsPage from './pages/contactUsPage';
+import FormAdminPage from './pages/formAdminPage'
 import './index.css';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
           <Route path='/' element={<HomePage/>}/>
           <Route path='/services' element={<MenuPage/>}/>
           <Route path='/contact' element={<ContactUsPage/>}/>
+          <Route path="/menu/admin" element={<FormAdminPage />} />
         </Routes>
       </BrowserRouter>
     </div>
