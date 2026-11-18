@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaInstagram, FaFacebookF } from 'react-icons/fa'
+import logo from '../assets/images/logo.png'
 
 const quickLinks = [
   { to: '/', label: 'Home' },
@@ -33,12 +34,10 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5">
-              <span className="w-9 h-9 rounded-full bg-[#F4AE3D] text-[#2B1B12] flex items-center justify-center">
-                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M8 3v8M5.5 3v5a2.5 2.5 0 005 0V3M8 11v10" />
-                  <path d="M17 21V3c-2.5 1.5-3.5 4.5-3.5 8H17" />
-                </svg>
-              </span>
+              <img
+                src={logo}
+                alt="Logo Alyka Food"
+                className="w-9 h-9 rounded-full object-cover"/>
               <span className="text-xl font-bold tracking-tight">AlykaFood</span>
             </div>
 
@@ -81,16 +80,9 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2.5">
                 <svg {...iconProps}>
-                  <rect x="3" y="5" width="18" height="14" rx="2" />
-                  <path d="M3 7l9 6 9-6" />
-                </svg>
-                hello@alykafood.com
-              </li>
-              <li className="flex items-start gap-2.5">
-                <svg {...iconProps}>
                   <path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z" />
                 </svg>
-                +62 812-3456-7890
+                +62 853-8199-2125
               </li>
             </ul>
           </div>
@@ -99,10 +91,8 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-5">Opening Hours</h3>
             <ul className="space-y-1 text-sm text-[#E9DCCB]/70">
-              <li>Monday - Friday</li>
-              <li className="text-[#F4AE3D]">08:00 AM - 10:00 PM</li>
-              <li className="pt-3">Saturday - Sunday</li>
-              <li className="text-[#F4AE3D]">09:00 AM - 11:00 PM</li>
+              <li>Every Day</li>
+              <li className="text-[#F4AE3D]">09:00 AM - 17:00 PM</li>
             </ul>
           </div>
         </div>

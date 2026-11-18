@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ActionButton from "../components/ActionButton";
 
 const PromoBanner = () => {
   return (
@@ -19,15 +20,9 @@ const PromoBanner = () => {
               Fresh, nutritious and delicious meals for a better you. Fresh ingredients, amazing taste, and convenient delivery.
             </p>
 
-            <Link
-              to="/services"
-              className="inline-flex items-center gap-2 bg-[#F4AE3D] hover:bg-[#E99B25] text-[#2B1B12] text-sm font-semibold px-6 py-3 rounded-full shadow-[0_10px_20px_-8px_rgba(180,110,20,0.6)] transition focus:outline-none focus-visible:ring-2 focus-visible:ring-[#2B1B12]"
-            >
+            <ActionButton to="/services">
               Order Healthy
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14m-7-7l7 7-7 7" />
-              </svg>
-            </Link>
+            </ActionButton>
           </div>
 
           {/* Gambar: memudar ke kiri supaya menyatu dengan gradient */}
